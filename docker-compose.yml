@@ -1,0 +1,80 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: responsi-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: responsi
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student123
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - backend
+
+  web1:
+    build:
+      context: ./web1
+    environment:
+      DB_HOST: db
+      DB_USER: student
+      DB_PASS: student123
+      DB_NAME: responsi
+      WEB_ID: WEB-1
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - db
+
+  web2:
+    build:
+      context: ./web2
+    environment:
+      DB_HOST: db
+      DB_USER: student
+      DB_PASS: student123
+      DB_NAME: responsi
+      WEB_ID: WEB-2
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - db
+
+  web3:
+    build:
+      context: ./web3
+    environment:
+      DB_HOST: db
+      DB_USER: student
+      DB_PASS: student123
+      DB_NAME: responsi
+      WEB_ID: WEB-3
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - db
+
+  nginx:
+    image: nginx:latest
+    container_name: responsi-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - frontend
+    depends_on:
+      - web1
+      - web2
+      - web3
+
+volumes:
+  db-data:
+
+networks:
+  frontend:
+  backend:
