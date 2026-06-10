@@ -429,15 +429,12 @@ docker compose up -d
 
 ## Hasil Akhir
 
-<img width="867" height="434" alt="Screenshot from 2026-06-06 12-20-13" src="https://github.com/user-attachments/assets/921e54a6-ff5f-4f32-a8c8-f028a8c04f99" />
+<img width="429" height="269" alt="Screenshot from 2026-06-10 15-48-01" src="https://github.com/user-attachments/assets/1def5327-f1a0-417a-a082-577990723afb" />
 
-<img width="867" height="434" alt="Screenshot from 2026-06-06 12-20-20" src="https://github.com/user-attachments/assets/79b51741-be9c-4649-be75-2ce5fbc72b81" />
+<img width="429" height="269" alt="Screenshot from 2026-06-10 15-48-06" src="https://github.com/user-attachments/assets/09de4d7e-5148-40c5-8942-75ea667b156e" />
 
-<img width="867" height="434" alt="Screenshot from 2026-06-06 12-20-23" src="https://github.com/user-attachments/assets/8ee748c9-45df-43fa-80c7-e38ae1e02f78" />
+<img width="429" height="269" alt="Screenshot from 2026-06-10 15-48-14" src="https://github.com/user-attachments/assets/6d54ad56-c465-4e05-a82a-be819a437fd5" />
 
-<img width="876" height="203" alt="Screenshot from 2026-06-06 12-20-41" src="https://github.com/user-attachments/assets/147ffdfb-bfe8-4f42-8a84-41fcb917ed3c" />
-
-<img width="876" height="297" alt="Screenshot from 2026-06-06 12-21-32" src="https://github.com/user-attachments/assets/1efdc26e-13e6-4416-8f56-0f90117a0888" />
 
 
 Setelah seluruh perbaikan dilakukan:
